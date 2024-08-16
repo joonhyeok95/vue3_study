@@ -1,6 +1,7 @@
 <template>
     <div class="home">
       <h2>Welcome to the User Management System</h2>
+      <p>{{ deployEnv }}</p>
       <p>
         This application allows you to manage users. You can view a list of users,
         register new users, and more.
@@ -15,6 +16,9 @@
   </template>
   
   <script setup>
+    import { ref } from 'vue';
+    // composition API 스타일 코딩
+    const deployEnv = ref(process.env.VUE_APP_CUSTOM_ENV_001);
   </script>
   
   <style scoped>
