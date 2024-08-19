@@ -1,7 +1,7 @@
 <template>
     <div class="home">
       <h2>Welcome to the User Management System</h2>
-      <p>{{ deployEnv }}</p>
+      <p>{{ deployEnv }} - version 240819_003</p>
       <p>
         This application allows you to manage users. You can view a list of users,
         register new users, and more.
