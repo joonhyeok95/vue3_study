@@ -1019,6 +1019,22 @@
   resolved "https://registry.npmmirror.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz"
   integrity sha512-dBVuXR082gk3jsFp7Rd/JI4kytwGHecnCoTtXFb7DB6CNHp4rg5k1bhg0nWdLGLnOV71lmDzGQaLMy8iPLY0pw==
 
+"@elastic/apm-rum-core@^5.21.0":
+  version "5.21.1"
+  resolved "https://registry.npmjs.org/@elastic/apm-rum-core/-/apm-rum-core-5.21.1.tgz"
+  integrity sha512-/LyLhVdJ+zcsKogwq2AEYARc//RDXOoTHWPERLay4sCsvvxc4/GkkhhOC40CqI0oMu4kUAoJInQWZuCM7zCZRQ==
+  dependencies:
+    error-stack-parser "^1.3.5"
+    opentracing "^0.14.3"
+    promise-polyfill "^8.1.3"
+
+"@elastic/apm-rum@^5.16.0":
+  version "5.16.0"
+  resolved "https://registry.npmjs.org/@elastic/apm-rum/-/apm-rum-5.16.0.tgz"
+  integrity sha512-vNwRWDIccdu6iPDpCyrC3myRnpBzRH6wlAoOZjgSFJilQJMsymb8NzR1rkQmNEBca+frRuDCZabd+ylEZ47YBA==
+  dependencies:
+    "@elastic/apm-rum-core" "^5.21.0"
+
 "@eslint/eslintrc@^0.4.3":
   version "0.4.3"
   resolved "https://registry.npmmirror.com/@eslint/eslintrc/-/eslintrc-0.4.3.tgz"
@@ -2984,6 +3000,13 @@ error-ex@^1.3.1:
   dependencies:
     is-arrayish "^0.2.1"
 
+error-stack-parser@^1.3.5:
+  version "1.3.6"
+  resolved "https://registry.npmjs.org/error-stack-parser/-/error-stack-parser-1.3.6.tgz"
+  integrity sha512-xhuSYd8wLgOXwNgjcPeXMPL/IiiA1Huck+OPvClpJViVNNlJVtM41o+1emp7bPvlCJwCatFX2DWc05/DgfbWzA==
+  dependencies:
+    stackframe "^0.3.1"
+
 error-stack-parser@^2.0.6:
   version "2.1.4"
   resolved "https://registry.npmmirror.com/error-stack-parser/-/error-stack-parser-2.1.4.tgz"
@@ -4607,6 +4630,11 @@ opener@^1.5.2:
   resolved "https://registry.npmmirror.com/opener/-/opener-1.5.2.tgz"
   integrity sha512-ur5UIdyw5Y7yEj9wLzhqXiy6GZ3Mwx0yGI+5sMn2r0N0v3cKJvUmFH5yPP+WXh9e0xfyzyJX95D8l088DNFj7A==
 
+opentracing@^0.14.3:
+  version "0.14.7"
+  resolved "https://registry.npmjs.org/opentracing/-/opentracing-0.14.7.tgz"
+  integrity sha512-vz9iS7MJ5+Bp1URw8Khvdyw1H/hGvzHWlKQ7eRrQojSCDL1/SrWfrY9QebLw97n2deyRtzHRC3MkQfVNUCo91Q==
+
 optionator@^0.9.1:
   version "0.9.4"
   resolved "https://registry.npmmirror.com/optionator/-/optionator-0.9.4.tgz"
@@ -5092,6 +5120,11 @@ progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.npmmirror.com/progress/-/progress-2.0.3.tgz"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
+
+promise-polyfill@^8.1.3:
+  version "8.3.0"
+  resolved "https://registry.npmjs.org/promise-polyfill/-/promise-polyfill-8.3.0.tgz"
+  integrity sha512-H5oELycFml5yto/atYqmjyigJoAo3+OXwolYiH7OfQuYlAqhxNvTfiNMbV9hsC6Yp83yE5r2KTVmtrG6R9i6Pg==
 
 proxy-addr@~2.0.7:
   version "2.0.7"
@@ -5690,6 +5723,11 @@ stable@^0.1.8:
   version "0.1.8"
   resolved "https://registry.npmmirror.com/stable/-/stable-0.1.8.tgz"
   integrity sha512-ji9qxRnOVfcuLDySj9qzhGSEFVobyt1kIOSkj1qZzYLzq7Tos/oUUWvotUPQLlrsidqsK6tBH89Bc9kL5zHA6w==
+
+stackframe@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.npmjs.org/stackframe/-/stackframe-0.3.1.tgz"
+  integrity sha512-XmoiF4T5nuWEp2x2w92WdGjdHGY/cZa6LIbRsDRQR/Xlk4uW0PAUlH1zJYVffocwKpCdwyuypIp25xsSXEtZHw==
 
 stackframe@^1.3.4:
   version "1.3.4"
