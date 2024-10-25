@@ -28,8 +28,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, getCurrentInstance } from 'vue'
 import { useRouter } from 'vue-router'
+
+const instance = getCurrentInstance(); // 현재 인스턴스 가져오기
+const apiClient = instance.appContext.config.globalProperties.$apiClient; // 전역 API 클라이언트 접근
 
 const userId = ref('')
 const firstName = ref('')
@@ -47,7 +50,7 @@ const registerUser = async () => {
   }
 
   try {
-      const response = await this.$apiClient.put('/api/v1/users', userData, {
+      const response = await apiClient.put('/api/v1/users', userData, {
         headers: {
         'Content-Type': 'application/json'
       }
