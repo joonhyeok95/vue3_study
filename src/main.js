@@ -1,6 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import axios from 'axios';
 
 // Elastic APM RUM 에이전트 로드 및 초기화
 const script = document.createElement('script');
