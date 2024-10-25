@@ -17,4 +17,11 @@ script.onload = () => {
 };
 document.head.appendChild(script);
 
+// API 베이스 URL 설정
+const apiClient = axios.create({
+  baseURL: process.env.VUE_API_BASE_URL,
+});
+// Axios 인스턴스를 전역으로 설정
+app.config.globalProperties.$apiClient = apiClient;
+
 createApp(App).use(router).mount('#app')

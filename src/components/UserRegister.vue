@@ -48,7 +48,7 @@ const registerUser = async () => {
   }
 
   try {
-      const response = await axios.put('/api/v1/users', userData, {
+      const response = await this.$apiClient.put('/api/v1/users', userData, {
         headers: {
         'Content-Type': 'application/json'
       }
