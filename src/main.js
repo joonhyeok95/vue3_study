@@ -27,4 +27,5 @@ const apiClient = axios.create({
 // Axios 인스턴스를 전역으로 설정
 app.config.globalProperties.$apiClient = apiClient;
 
-createApp(App).use(router).mount('#app')
+app.use(router);
+app.mount('#app');
