@@ -33,8 +33,8 @@
   
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('/api/v1/users')
-        if (response.data.code === 200) {
+      const response = await this.$apiClient.get('/api/v1/users')
+      if (response.data.code === 200) {
         users.value = response.data.data
       } else {
         console.error('Failed to fetch users:', response.data.message)
@@ -47,7 +47,7 @@
     if (confirm('Are you sure you want to delete this user?')) {
         try {
             // 비동기적으로 삭제 요청
-            await axios.delete(`/api/v1/users/${userId}`);
+            await this.$apiClient.delete(`/api/v1/users/${userId}`);
             alert('User deleted successfully');
             
             // 사용자 목록을 새로 고침
