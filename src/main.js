@@ -3,6 +3,8 @@ import App from './App.vue'
 import router from './router'
 import axios from 'axios';
 
+const app = createApp(App);
+
 // Elastic APM RUM 에이전트 로드 및 초기화
 const script = document.createElement('script');
 script.src = '/js/elastic-apm-rum.umd.min.js'; // public 폴더 내 경로에 따라 수정
